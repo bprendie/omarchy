@@ -11,7 +11,7 @@ setup="$ROOT/install/hardware/lenovo/thinkpad-t14s-camera.sh"
 migration="$ROOT/migrations/1791080527.sh"
 
 # Exercise the real scripts, redirecting privileged writes to a temporary root.
-omarchy-hw-qualcomm-soc() { [[ $soc == "qualcomm" ]]; }
+omarchy-hw-aarch64-qualcomm() { [[ $soc == "qualcomm" ]]; }
 omarchy-hw-match() { grep -qi -- "$1" <<<"$model"; }
 omarchy-pkg-add() { printf '%s\n' "$*" >>"$scratch/packages"; }
 sudo() {

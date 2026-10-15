@@ -1,7 +1,7 @@
 # Desktop camera support for the Snapdragon ThinkPad T14s Gen 6 (21N1/21N2).
 # Requires a kernel/device tree that already exposes the OV02C10 camera.
 
-if omarchy-hw-qualcomm-soc && omarchy-hw-match '^21N[12]'; then
+if omarchy-hw-aarch64-qualcomm && omarchy-hw-match '^21N[12]'; then
   # Pulls in libcamera and its software ISP IPA as dependencies.
   omarchy-pkg-add pipewire-libcamera
 

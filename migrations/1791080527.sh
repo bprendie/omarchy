@@ -1,6 +1,6 @@
 echo "Enable desktop camera access on Snapdragon ThinkPad T14s Gen 6"
 
-if omarchy-hw-qualcomm-soc && omarchy-hw-match '^21N[12]'; then
+if omarchy-hw-aarch64-qualcomm && omarchy-hw-match '^21N[12]'; then
   source "$OMARCHY_PATH/install/hardware/lenovo/thinkpad-t14s-camera.sh"
 
   sudo udevadm control --reload
